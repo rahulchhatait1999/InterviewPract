@@ -10,6 +10,7 @@ public class deleteNodesWhichHaveAGreaterValueOnRightSide {
 		
 		while(curr!=null)
 		{
+			
 			prev = curr;
 			if(curr.data<curr.next.data)
 			{
