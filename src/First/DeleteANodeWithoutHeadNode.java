@@ -4,14 +4,11 @@ public class DeleteANodeWithoutHeadNode {
 	
 	static void deleteNode(Node delNode) {
 		
-		if(delNode == null || delNode.next == null) return ;
 		
+		if(delNode == null || delNode.next == null) return;
 		
-		Node temp = delNode.next;
-		delNode.data = temp.data;
-		delNode.next = temp.next;
-		
-		temp.next = null; 
+		delNode.data= delNode.next.data;
+		delNode.next = delNode.next.next;
 		
 		
 		
